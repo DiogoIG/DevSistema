@@ -14,10 +14,8 @@ Permitir acesso a internete e a jogos que o cliente deseja, podendo fazer trabal
 
 ## Regras de Negócio
 -Limite de tempo por determinado valor
--Não permitir uso de bebidas alcolicas
--Não permitir uso de cigarros
--Silencio para não atrapalhar a pessoa ao lado
--Uso conciente da maquina
+-Limitar o acesso a certos sites
+-Notificar o sistema do adm sobre problemas na maquina
 
 
 ## Requisitos Funcionais
