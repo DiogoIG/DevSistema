@@ -39,3 +39,6 @@ Lista de regras de negocio (RN01,RN02...)
 Lista de requisitos funcionais (RF01, RF02...)
 Lista de requisitos não funcionais (RNF01...)
 
+
+# Curiosidade
+No vs Code usar  " ! " vc cria uma base do site (alterar a linguagem para portugues so colocar pt-br)
