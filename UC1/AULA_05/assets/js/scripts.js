@@ -17,6 +17,6 @@ let estadocivil = "Solteiro";
 let totalfilhos = "0";
 let naturalidade = "Fortaleza"
 let estado = "Ceará"
-let dados = "Nome: "+ nome3 + " Idade: " + idade + " Estado Civil: " + estadocivil + " Filhos: " + totalfilhos + " Naturalidade: " + naturalidade + " Estado: " + estado
+let dados = "\nNome: "+ nome3 + "\nIdade: " + idade + "\nEstado Civil: " + estadocivil + "\nFilhos: " + totalfilhos + "\nNaturalidade: " + naturalidade + "\nEstado: " + estado
 
 console.log("Meus dados: " + dados)
