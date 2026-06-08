@@ -6,3 +6,18 @@
             crossorigin="anonymous"
         ></script>" 
         é a programação d JS para o boostrap no VS code-->
+
+codigo :    <script src=""></script>
+<!-- serve para ligar o arquivo de outra pasta no codigo -->
+Caminho para ligar o codigo com a pasta: Assets / js / scripts.js
+
+
+.container>.row>.col-12
+estrutura d organização do boostrap, ELE Divide uma linha da pagina com 12 colunas separando em 12 partes
+
+link css é o codigo usado para linkar o css 
+
+script:src é para linkar o js
+
+
+No java script, usar Let para criar uma variavel que pode ser atualizada , ela sempre oclocara o ultimo q foi escrito.
