@@ -6,3 +6,10 @@ ${ }
 
 % Serve para setar a variavel 
 
+se
+
+inf (variavel === valor) { 
+    se verdadeiro
+} else { 
+    se falço
+}
