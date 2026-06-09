@@ -21,3 +21,5 @@ script:src é para linkar o js
 
 
 No java script, usar Let para criar uma variavel que pode ser atualizada , ela sempre oclocara o ultimo q foi escrito.
+
+alt + shift + f para separação automatica no codigo
