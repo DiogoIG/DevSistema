@@ -10,7 +10,7 @@ if(prodqt !== ""  ){
     }else{
         proddp = false
         alert (`Produto não disponivel!`)
-    }
+    }   
 }else {
     alert (`Você digitou letra e não numero ☺ .`)
 }
