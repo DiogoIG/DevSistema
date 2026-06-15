@@ -19,5 +19,3 @@ if(prodqt !== ""  ){
 }else {
     alert(`Você nao escreveu nada >:( `)
 }
-
-
