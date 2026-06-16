@@ -28,3 +28,8 @@ cls ou clear
 
 npm install prompt-sync
 <!-- para instalar biblioteca para visualizsar os resultados no terminal -->
+
+
+node nomedoarquivo.js
+
+<!-- para visualizar no terminal -->
