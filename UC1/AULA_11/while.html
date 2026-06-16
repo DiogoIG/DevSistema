@@ -1,0 +1,34 @@
+<script>
+    let teste = prompt("Digite qualquer coisa")
+
+    let contador = 0
+
+    while(teste !== null){
+        contador ++
+
+        if(contador < 6){
+            alert(`
+            Valor digitdo:
+            ========
+            
+            Valor: ${teste}
+    
+            Contagem de uso: ${contador}
+            `)
+
+
+
+        }else{
+
+            //teste = null
+            alert(`Ação sera finalizada `)
+            break
+        }    
+
+        teste = prompt("Digite qualquer coisa: ")
+    }
+
+    alert("Ação finalizada")
+
+
+</script>
