@@ -1,0 +1,35 @@
+<script>
+let lista = [
+    "Brasil",
+    "Alemanha",
+    "Espanha",
+    "Marrocos"
+]
+let confirmar = confirm("Deseja excluir o ultimo item da lista ?")
+
+while(lista.length>0){
+
+
+    if (confirmar){
+        lista.pop()
+        let resultado = "lista de paises \n"
+        let tamanho = lista.length
+        for(i=0;i < tamanho; i++){
+
+        resultado += `${i+1}.${lista[i]}\n`
+
+        }   
+        alert(resultado)
+    } else {
+        alert("lista vazia")
+    
+    }
+    
+    confirmar = confirm("Deseja excluir o ultimo item  ?")
+}
+
+
+
+
+
+</script>

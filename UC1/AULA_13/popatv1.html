@@ -1,0 +1,33 @@
+<script>
+let lista = [
+    "Macaco",
+    "Gorila",
+    "Orangotango",
+    "Oranguru"
+]
+ 
+while(lista.length>0 ){
+    let resultado = "lista de animais \n"
+    let tamanho = lista.length
+    
+    for(i=0;i < tamanho; i++){
+        
+        resultado += `${i+1}.${lista[i]}\n`
+        
+    }   
+    
+    let confirmar = confirm(resultado+"\nDeseja excluir o ultimo item da lista ?")
+    if (confirmar){
+        lista.pop()
+    }else {
+        break
+    }
+    
+    
+}
+alert("Operação encerrada")
+
+
+
+
+</script>
