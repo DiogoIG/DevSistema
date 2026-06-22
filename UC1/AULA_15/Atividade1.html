@@ -1,0 +1,86 @@
+<script>
+
+
+    let pmt1 = Number(prompt(`
+Digite:
+1. PARA ADICIONAR.
+2. PARA EXCLUIR.
+0. PARA CANCELAR.
+`))
+
+
+    let lista = [];
+
+
+    while (pmt1 !== 0) {
+        let resu = "**Lista de usuarios1:\n"
+        let tamanho = lista.length;
+        for (i = 0; i < tamanho; i++) {
+            resu += `${i + 1}.${lista[i]}\n`
+        }
+
+
+        if (pmt1 === 1) {
+            let adicionar = prompt(resu + "*Digite um novo nome1:")
+            while (adicionar !== null && adicionar !== "") {
+
+
+                let resu = "**Lista de usuarios2:\n"
+                let tamanho = lista.length;
+                for (i = 0; i < tamanho; i++) {
+                    resu += `${i + 1}.${lista[i]}\n`
+                }
+
+
+                let resultado1 = "Lista de nomes1:\n"
+                lista.push(adicionar);
+                lista.forEach(function (nome1, i) {
+                    resultado1 += `${i + 1}.${nome1}\n`
+                })
+                alert(resultado1)
+                adicionar = prompt(resultado1 + "**Digite um novo nome2:")
+            }
+            pmt1 = ""
+        } else if (pmt1 === 2) {
+            let excluir = Number(prompt(resu + `Digite um número para exlcuir1`))
+            while (excluir !== 0 && excluir !== "") {
+
+
+                let resu = "**Lista de usuarios3:\n"
+                let tamanho = lista.length;
+                for (i = 0; i < tamanho; i++) {
+                    resu += `${i + 1}.${lista[i]}\n`
+                }
+
+
+                let resultado2 = "Lista de nomes2:\n"
+                lista.splice(excluir - 1, 1);
+                lista.forEach(function (nome2, i) {
+                    resultado2 += `${i + 1}.${nome2}\n`
+                })
+                alert(resultado2)
+                excluir = Number(prompt(resultado2 + `Digite um número para exlcuir2`))
+            }
+            pmt1 = ""
+        } else {
+            alert("Número invalido")
+
+
+        }
+
+
+        pmt1 = Number(prompt(`
+Digite:
+1. PARA ADICIONAR.
+2. PARA EXCLUIR.
+0. PARA CANCELAR.
+`))
+    }
+    let resu = "**Lista de usuarios4:\n"
+    let tamanho = lista.length;
+    for (i = 0; i < tamanho; i++) {
+        resu += `${i + 1}.${lista[i]}\n`
+    }
+    alert(resu + "SISTEMA FINALIZADO")
+</script>
+
