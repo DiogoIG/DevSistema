@@ -1,0 +1,32 @@
+<script>
+    function soma(v1, v2) {
+
+        let soma = v1 + v2
+        alert(`Soma total de ${v1}+ ${v2} é igual a: ${soma}`)
+
+    }
+
+    soma(100, 200)
+
+    function operacoes(v1, v2, operacao) {
+        let resultado = ""
+        if (operacao == "somar") {
+            resultado = v1 + v2
+        } else if (operacao == "subtracao") {
+            resultado = v1 - v2
+
+        } else if (operacao = "multiplicar") {
+            resultado = v1 * v2
+        } else {
+            resultado = v1 / v2
+        }
+
+        alert(`a operação de ${operacao} de ${v1} e de ${v2}
+         resultou em: ${resultado}`)
+
+    }
+    
+    operacoes(300,200,"multipluicar")
+
+
+</script>

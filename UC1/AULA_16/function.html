@@ -1,0 +1,43 @@
+<script>
+    let nomes = [
+    "Paulo",
+    "Paula",
+    "Paulin",
+    "Poul"
+    ]
+
+    let paises = [
+        "Brasil",
+        "Venezuela",
+        "China",
+        "Japão",
+        "Peru"
+    ]
+
+    let exibir = "Cadastro de ...\n"
+    paises.forEach(function(dados,i) {
+        exibir += `${i+1}-${dados}\n`
+
+    })
+
+    function teste(){
+        alert(nomes.join("\n"))
+
+    }
+teste()
+
+function soma(){
+    let v1 = 100
+    let v2 = 200
+    let ttl = v1 + v2
+    alert(`A soma de ${v1} + ${v2} é de: ${ttl}`)
+}
+
+soma()
+
+
+
+
+
+
+</script>
