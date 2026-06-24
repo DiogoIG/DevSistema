@@ -1,0 +1,26 @@
+<script>
+    let Cust = Number(prompt(`Informe o preço do produto`))
+    let pLuc = Number(prompt(`Informe o Lucro do produto`))
+
+
+    function calPrecoV(cst,lc){
+
+        while(cst !== 0 && lc !== 0){
+            console.log(cst)
+            console.log(lc)
+            if(cst > 0 && lc > 0){
+                let luc = (cst * lc)/ 100
+                let pVenda = cst + lc
+                let mensagem = `Custo do produto: ${cst} \nLucro percentual: ${lc} \nPreço de venda: ${pVenda.toFixed(2)}`
+                return mensagem
+            }else{
+            alert(`Numero Negativo`)
+            }
+
+            let Cust = Number(prompt(`Informe o preço do produto`))
+            let pLuc = Number(prompt(`Informe o Lucro do produto`))
+        }
+    }
+    alert(calPrecoV(Cust,pLuc))
+    
+</script>
