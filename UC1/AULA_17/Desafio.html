@@ -1,0 +1,47 @@
+<script>
+    function calcularComissao() {
+    // 1. Receber os dados do usuário
+    let nome = prompt("Digite o nome do vendedor:");
+    let valorVendidoInput = prompt("Digite o valor total vendido (R$):");
+    let percentualComissaoInput = prompt("Digite o percentual de comissão (%):");
+
+    // 2. Validar o nome
+    if (!nome || nome.trim() === "") {
+        alert("Erro: O nome do vendedor deve ser preenchido.");
+        return; // Interrompe a execução da função
+    }
+
+    // Converter as entradas numéricas de string para números flutuantes
+    let valorVendido = parseFloat(valorVendidoInput);
+    let percentualComissao = parseFloat(percentualComissaoInput);
+
+    // 3. Validar o valor vendido (deve ser maior que zero)
+    if (isNaN(valorVendido) || valorVendido <= 0) {
+        alert("Erro: O valor vendido deve ser um número maior que zero.");
+        return;
+    }
+
+    // 4. Validar o percentual de comissão (não pode ser negativo)
+    if (isNaN(percentualComissao) || percentualComissao < 0) {
+        alert("Erro: O percentual de comissão não pode ser negativo.");
+        return;
+    }
+
+    // 5. Calcular a comissão
+    let valorComissao = valorVendido * (percentualComissao / 100);
+
+    // 6. Exibir o resumo com alert
+    let resumo = `--- Resumo da Comissão ---\n` +
+                 `Vendedor: ${nome}\n` +
+                 `Valor Vendido: R$ ${valorVendido.toFixed(2)}\n` +
+                 `Percentual de Comissão: ${percentualComissao}%\n` +
+                 `Valor da Comissão: R$ ${valorComissao.toFixed(2)}`;
+    
+    alert(resumo);
+}
+
+// Executar a função
+calcularComissao();
+
+
+</script>

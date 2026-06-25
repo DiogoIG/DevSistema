@@ -1,0 +1,48 @@
+<script>
+    function classificarIdade() {
+    while (true) {
+        // 1. Receber a idade usando prompt
+        let entradaIdade = prompt("Digite a idade (ou digite uma letra / deixe vazio para sair):");
+
+        // Condição de saída: Se clicar em cancelar (null) ou deixar o campo vazio
+        if (entradaIdade === null || entradaIdade.trim() === "") {
+            alert("Programa encerrado.");
+            break; // Sai do laço while
+        }
+
+        // 2. Converter a idade usando Number()
+        let idade = Number(entradaIdade);
+
+        // Condição de saída: Se NÃO for um número (ou seja, se for uma letra)
+        if (isNaN(idade)) {
+            alert("Você digitou uma letra ou caractere inválido. Programa encerrado.");
+            break; // Sai do laço while
+        }
+
+        // 3. Validar se a idade é maior ou igual a zero
+        if (idade < 0) {
+            alert("Erro: A idade não pode ser negativa. Tente novamente.");
+            continue; // Volta para o início do while, sem classificar
+        }
+
+        let classificacao = "";
+
+        // 4. Regras de classificação
+        if (idade < 12) {
+            classificacao = "Criança";
+        } else if (idade < 18) {
+            classificacao = "Adolescente";
+        } else if (idade < 60) {
+            classificacao = "Adulto";
+        } else {
+            classificacao = "Idoso";
+        }
+
+        // 5. Exibir a classificação com alert
+        alert(`Com ${idade} anos, a classificação é: ${classificacao}`);
+    }
+}
+
+// Executar a função
+classificarIdade();
+</script>

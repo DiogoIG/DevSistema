@@ -1,0 +1,37 @@
+<script>
+    let stats = false
+    let prout = prompt(`Digite o nome do produto: `)
+
+    function campvazio(prout,stats){
+        
+        while(stats == false){
+            if(prout != null && prout != ""){
+            alert (`Produto: ${prout} - foi registrado com sucesso`)
+        
+
+            }else{
+            alert (`Campo obrigatorio não informado`)
+        
+            stats = true
+         }
+
+         if(stats == false){
+             prout = prompt(`Digite o nome do produto: `)
+         }else{
+
+            alert(`Programa finalizado`)
+            break
+            
+         }
+
+        }
+
+    }
+    campvazio(prout,stats)
+
+    
+
+
+
+
+</script>

@@ -1,0 +1,61 @@
+<script>
+let listaProdutos = [];
+
+function exibirMenu() {
+    let mensagem = "--- MENU DE PRODUTOS ---\n" +
+                   "1 - Cadastrar produto\n" +
+                   "2 - Listar produtos\n" +
+                   "0 - Sair\n\n" +
+                   "Escolha uma opção:";
+    
+    let opcao = prompt(mensagem);
+    return opcao;
+}
+
+function cadastrarProduto() {
+    let nome = prompt("Digite o nome do produto:");
+    if (!nome || nome.trim() === "") {
+        alert("Erro: O nome do produto não pode ser vazio.");
+    } else {
+        listaProdutos.push(nome.trim());
+        alert(`Produto cadastrado: ${nome}`);
+    }
+}
+function listarProduto() {
+    if (listaProdutos.length === 0) {
+        alert("Nenhum produto cadastrado até o momento.");
+    } else {
+        let textoLista = "--- PRODUTOS CADASTRADOS ---\n";
+        for (let i = 0; i < listaProdutos.length; i++) {
+            textoLista += `${i + 1}. ${listaProdutos[i]}\n`;
+        }
+        alert(textoLista);
+    }
+}
+
+function encerrarSistema() {
+    alert("Sistema encerrado.");
+}
+
+function iniciarSistema() {
+    let continuar = true;
+
+    while (continuar) {
+        let opcaoEscolhida = exibirMenu();
+        if (opcaoEscolhida === "1") {
+            cadastrarProduto();
+        } else if (opcaoEscolhida === "2") {
+            listarProduto();
+        } else if (opcaoEscolhida === "0" || opcaoEscolhida === null) {
+            encerrarSistema();
+            continuar = false;
+        } else {
+            alert("Opção inválida! Tente novamente.");
+        }
+    }
+}
+iniciarSistema();
+
+
+
+</script>
